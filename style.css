@@ -1,0 +1,45 @@
+.home-banner {
+  overflow: hidden;
+  position: relative;
+}
+
+.home-banner .social-share {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-pack: center;
+  justify-content: center;
+  right: 16px;
+  z-index: 1;
+}
+
+.home-banner .social-share a {
+  width: 40px;
+  height: 40px;
+  font-size: 15px;
+  background: #2C394B;
+  text-align: center;
+  line-height: 40px;
+  margin: 5px;
+  color: #fff;
+  border-radius: 6px;
+}
+
+.home-banner .social-share a:hover {
+  background: #FF4C29;
+}
+
+/* .home-banner .home-banner-txt {
+  padding-top: 50px;
+  padding-bottom: 50px;
+} */
+
+.col-img {
+  background-image: url( '/images/patternbg.svg' );
+  background-size: contain;
+  background-repeat: no-repeat;
+}
