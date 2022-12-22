@@ -10,13 +10,19 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
   <title>Portfolio</title>
 </head>
-<body class="bg-[#082032]">
-  <!-- HEADER -->
-  <div class="bg-orange-500 py-5">
-    <div class="container">
-      <h1>Hi</h1>
+<header>
+  <div class="bg-[#082032] py-5 top-0 sticky">
+    <div class="container mx-auto flex justify-between">
+      <div>
+        <h2 class="text-white text-3xl">William<span class="text-[#FF4C29]">.</span></h2>
+      </div>
+      <div>
+        <button class="bg-[#FF4C29] py-2 px-4 rounded-md text-white">Contact</button>
+      </div>
     </div>
   </div>
+</header>
+<body class="bg-[#082032] lg:px-0 px-4">
   <div class="min-h-screen items-center flex">
     <!-- SECTION 1 -->
     <div class="container mx-auto home-banner">
@@ -32,19 +38,19 @@
       <!-- HOME BANNER-->
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
         <!-- FIRST COL -->
-        <div class="justify-around flex">
+        <div class="space-y-6 flex">
           <div class="home-banner-txt text-white justify-between">
             <h4 class="text-3xl pb-4">Hi folks 👋🏼 I am</h4>
             <h1 class="text-5xl pb-4">William Baele</h1>
             <p><span data-controller="typed-js"></span></p>
             <div id="typed-strings" class="text-2xl ">
-              <h2 class="text-2xl">Ruby on Rails Web Developper</h2>
-              <h2 class="text-2xl">WordPress Developper</h2>
-              <h2 class="text-2xl">Enthusiast coder</h2>
+              <h2>Ruby on Rails Web Developper</h2>
+              <h2>WordPress Developper</h2>
+              <h2>Enthusiast coder</h2>
             </div>
             <span id="typed"></span>
-            <p class="py-4">The namics of how users interact with interactive elements within a user interface flow chart based on container proportion.</p>
-            <button class="bg-[#FF4C29] py-3 px-10 rounded-xl">Contact me</button>
+            <p class="py-8 text-lg">Passionate web developer with an eye for new technologies. Driven by the desire to code applications and websites and to learn new languages and technologies.</p>
+            <button class="bg-[#FF4C29] py-3 px-10 rounded-md">Contact me</button>
           </div>
         </div>
         <div class="col-img justify-center flex">
@@ -53,8 +59,67 @@
       </div>
     </div>
   </div>
-  <div class="bg-green-100">
-    a
+  <!-- SECTION PROJECTS -->
+  <div class="bg-[#2C394B] py-20">
+    <div class="container mx-auto">
+      <div class="row justify-center">
+        <div class="col-lg-6 text-center">
+            <div class="text-white text-4xl pb-10">
+                <h2 class="font-bold"><span class="underline--magical">MY EXPERIENCE</span></h2>
+            </div>
+        </div>
+    </div>
+    <!-- component -->
+<div class="container mx-auto w-full h-full">
+  <div class="relative wrap overflow-hidden p-10 h-full">
+    <div class="border-2-2 absolute border-opacity-90 border-[#FF4C29] h-full border" style="left: 50%"></div>
+    <!-- right timeline -->
+    <div class="mb-8 flex justify-between items-center w-full right-timeline">
+      <div class="order-1 w-5/12"></div>
+      <div class="z-20 flex items-center order-1 bg-[#082032] shadow-xl w-8 h-8 rounded-full">
+        <h1 class="mx-auto font-semibold text-lg text-white">1</h1>
+      </div>
+      <div class="order-1 bg-[#082032] rounded-lg shadow-xl w-5/12 px-6 py-4">
+        <h3 class="mb-3 font-bold text-white text-xl">Lorem Ipsum</h3>
+        <p class="text-sm leading-snug tracking-wide text-gray-900 text-gray-500">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+      </div>
+    </div>
+    <!-- left timeline -->
+    <div class="mb-8 flex justify-between flex-row-reverse items-center w-full left-timeline">
+      <div class="order-1 w-5/12"></div>
+      <div class="z-20 flex items-center order-1 bg-[#082032] shadow-xl w-8 h-8 rounded-full">
+        <h1 class="mx-auto text-white font-semibold text-lg">2</h1>
+      </div>
+      <div class="order-1 bg-[#082032] rounded-lg shadow-xl w-5/12 px-6 py-4">
+        <h3 class="mb-3 font-bold text-white text-xl">Lorem Ipsum</h3>
+        <p class="text-sm leading-snug tracking-wide text-gray-900 text-gray-500">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+      </div>
+    </div>
+    <!-- right timeline -->
+    <div class="mb-8 flex justify-between items-center w-full right-timeline">
+      <div class="order-1 w-5/12"></div>
+      <div class="z-20 flex items-center order-1 bg-[#082032] shadow-xl w-8 h-8 rounded-full">
+        <h1 class="mx-auto font-semibold text-lg text-white">3</h1>
+      </div>
+      <div class="order-1 bg-[#082032] rounded-lg shadow-xl w-5/12 px-6 py-4">
+        <h3 class="mb-3 font-bold text-white text-xl">Lorem Ipsum</h3>
+        <p class="text-sm leading-snug tracking-wide text-gray-900 text-gray-500">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+      </div>
+    </div>
+    <!-- left timeline -->
+    <div class="mb-8 flex justify-between flex-row-reverse items-center w-full left-timeline">
+      <div class="order-1 w-5/12"></div>
+      <div class="z-20 flex items-center order-1 bg-[#082032] shadow-xl w-8 h-8 rounded-full">
+        <h1 class="mx-auto text-white font-semibold text-lg">4</h1>
+      </div>
+      <div class="order-1 bg-[#082032] rounded-lg shadow-xl w-5/12 px-6 py-4">
+        <h3 class="mb-3 font-bold text-white text-xl">Lorem Ipsum</h3>
+        <p class="text-sm leading-snug tracking-wide text-gray-900 text-gray-500">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+      </div>
+    </div>
+  </div>
+</div>
+    </div>
   </div>
 </body>
 <script>
