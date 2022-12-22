@@ -68,3 +68,11 @@
     background-size: 100% 88%;
   }
 }
+
+.tags span {
+  font-size: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 5px 15px;
+  border-radius: 40px;
+  margin: 0 5px 5px 0;
+}
