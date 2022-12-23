@@ -16,6 +16,21 @@
   right: 16px;
   z-index: 1;
 }
+.social-share-footer a {
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+  background: #2C394B;
+  text-align: center;
+  line-height: 40px;
+  margin: 5px;
+  color: white;
+  border-radius: 6px;
+}
+.social-share-footer a:hover {
+  background: #FF4C29;
+
+}
 
 .home-banner .social-share a {
   width: 40px;
