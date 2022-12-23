@@ -44,12 +44,13 @@
             <h1 class="text-5xl pb-4">William Baele</h1>
             <p><span data-controller="typed-js"></span></p>
             <div id="typed-strings" class="text-2xl ">
+              <h2>Fullstack Web Developper</h2>
               <h2>Ruby on Rails Web Developper</h2>
               <h2>WordPress Developper</h2>
               <h2>Enthusiast coder</h2>
             </div>
             <span id="typed"></span>
-            <p class="py-8 text-lg">Passionate web developer with an eye for new technologies. Driven by the desire to code applications and websites and to learn new languages and technologies.</p>
+            <p class="py-8 text-lg">Passionate web developer with an eye for new technologies. Driven by the desire to code applications and websites and to learn new languages and horizons.</p>
             <button class="bg-[#FF4C29] py-3 px-10 rounded-md">Contact me</button>
           </div>
         </div>
@@ -124,13 +125,21 @@
     <div class="text-white text-4xl pb-10 text-center">
       <h2 class="font-bold px-4"><span class="underline--magical">MY PORTFOLIO</span></h2>
     </div>
+    <!-- FILTERS -->
+    <div class="flex flex-wrap justify-center mb-16 gap-4">
+      <div id="myBtnContainer">
+        <button class="bg-[#2C394B] py-2 px-6 text-white rounded-md btn active" onclick="filterSelection('all')">All</button>
+        <button class="bg-[#2C394B] py-2 px-6 text-white rounded-md btn" onclick="filterSelection('ror')">Ruby on Rails</button>
+        <button class="bg-[#2C394B] py-2 px-6 text-white rounded-md btn" onclick="filterSelection('wp')">WordPress</button>
+      </div>
+    </div>
     <!-- PORTFOLIO -->
-    <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 px-4 lg:px-0">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 px-4 lg:px-0 container">
       <!-- 1ST PROJECT -->
-      <div>
-        <div class="grid grid-cols-12 rounded">
-          <div class="col-span-12 lg:col-span-7 relative object-cover">
-            <img src="https://img.freepik.com/free-vector/nature-scene-with-river-hills-forest-mountain-landscape-flat-cartoon-style-illustration_1150-37326.jpg" alt="">
+      <div class="filterDiv ror">
+        <div class="grid grid-cols-12 rounded ">
+          <div class="col-span-12 lg:col-span-7 relative">
+            <img class="img-project"  src="images/math-mavens.png" alt="">
             <button class="absolute bottom-4 right-4 bg-[#FF4C29] p-2 rounded-md">
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-eye" viewBox="0 0 16 16">
                 <path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z"/>
@@ -139,20 +148,21 @@
           </button>
           </div>
           <div class="col-span-12 lg:col-span-5 bg-[#2C394B] p-4">
-            <h2 class="text-white text-xl font-bold">Name</h2>
-            <p class="py-4 text-gray-500">Lorem ipsum dolor sit amet consectetur, adipisicing amet consectetur.</p>
+            <h2 class="text-white text-xl font-bold">Math Mavens</h2>
+            <p class="py-2 text-gray-500">App who aims to help children practice mental math skills by playing online games.</p>
             <div class="flex flex-wrap tags py-2">
-              <span class="text-gray-500">WordPress</span>
-              <span class="text-gray-500">Design</span>
+              <span class="text-gray-500">Ruby on Rails</span>
+              <span class="text-gray-500">JavaScript</span>
+              <span class="text-gray-500">Bootstrap</span>
             </div>
           </div>
         </div>
       </div>
       <!-- 2ND PROJECT-->
-      <div>
-        <div class="grid grid-cols-12 rounded">
-          <div class="col-span-12 lg:col-span-7 relative ">
-            <img class="object-cover h-100 w-100"src="https://img.freepik.com/free-vector/nature-scene-with-river-hills-forest-mountain-landscape-flat-cartoon-style-illustration_1150-37326.jpg" alt="">
+      <div class="filterDiv ror">
+        <div class="grid grid-cols-12 rounded ">
+          <div class="col-span-12 lg:col-span-7 relative">
+            <img class="img-project"  src="images/math-mavens.png" alt="">
             <button class="absolute bottom-4 right-4 bg-[#FF4C29] p-2 rounded-md">
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-eye" viewBox="0 0 16 16">
                 <path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z"/>
@@ -161,15 +171,17 @@
           </button>
           </div>
           <div class="col-span-12 lg:col-span-5 bg-[#2C394B] p-4">
-            <h2 class="text-white text-xl font-bold">Name</h2>
-            <p class="py-4 text-gray-500">Lorem ipsum dolor sit amet consectetur, adipisicing amet consectetur.</p>
+            <h2 class="text-white text-xl font-bold">The Islanders</h2>
+            <p class="py-2 text-gray-500">Clone of AirBnb for islands booking with a booking management system.</p>
             <div class="flex flex-wrap tags py-2">
-              <span class="text-gray-500">WordPress</span>
-              <span class="text-gray-500">Design</span>
+              <span class="text-gray-500">Ruby on Rails</span>
+              <span class="text-gray-500">JavaScript</span>
+              <span class="text-gray-500">Bootstrap</span>
             </div>
           </div>
         </div>
       </div>
+      <!-- 3RD PROJECT-->
   </div>
 </body>
 <script>
@@ -180,5 +192,53 @@
     loopCount: Infinity,
 
   });
+
+  filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("filterDiv");
+  if (c == "all") c = "";
+  // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+// Show filtered elements
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {
+      element.className += " " + arr2[i];
+    }
+  }
+}
+
+// Hide elements that are not selected
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+// Add active class to the current control button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
 </script>
 </html>
